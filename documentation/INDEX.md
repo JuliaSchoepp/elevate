@@ -5,6 +5,12 @@ Du stehst schon wieder morgens mit dem Kinderwagen vor dem Fahrstuhl - außer Be
 
 Hier kommt Elevate! ins Spiel. Gib einfach an, welche Haltestellen sind die du regelmäßig nutzt, und wann du benachrichtigt werden willst. Und wenn der Fahstuhl oder die Rolltreppe außer Betrieb ist bekommst du eine Nachricht - und stehst nie wieder vor verschlossenen Fahrstuhltüren. 
 
+### Zielgruppen:
+Regelmäßige Kund:innen der S-Bahnen, insbesondere:
+- Menschen mit Kindern (v.a.: Kinderwägen etc.)
+- Menschen mit Mobilitätseinschränkungen
+- Menschen mit Gepäck, Fahrrädern etc.
+
 ## 2. Systemkomponenten
 Hardware  (keine?)
 
@@ -57,4 +63,13 @@ Wartungszugang erforderlich?
 ## 8. Bedienoberflächen
 Systemvoraussetzungen  
 Nutzer- und Berechtigungskonzept  
+
+### User Stories
+- Auswählen einer Station (Facility?) über Karte
+- Auswahl einer Facility über Stationssuche
+- Anlegen eines Alarms für bestimmte Facilities
+- Konfigurieren eines Alarms (Uhrzeit)
+- Ändern / Löschen eines Alarms
+- Einsehen von Statistiken
 ...
+
