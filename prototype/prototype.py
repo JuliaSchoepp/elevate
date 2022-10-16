@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas
+import pandas as pd
 import requests
 import configparser
 
@@ -17,6 +17,13 @@ def fetch(session, url, headers):
     except Exception:
         return {}
 
+def tweak_df(json):
+    raw = pd.DataFrame(json)
+    return (raw
+            .rename(columns={'geocoordX': 'lon', 'geocoordY': 'lat'})
+            .dropna(subset=['lat', 'lon'])
+            )
+
 session = requests.Session()
 
 st.write('Hello World')
@@ -24,4 +31,6 @@ st.write('Hello World')
 headers = {'DB-Client-Id': ID, 'DB-Api-Key': KEY}
 data = fetch(session, 'https://apis.deutschebahn.com/db-api-marketplace/apis/fasta/v2/facilities', headers=headers)
 
-st.write(data)
+df = tweak_df(data)
+
+st.map(df)
