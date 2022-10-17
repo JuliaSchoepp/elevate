@@ -6,9 +6,17 @@ Du stehst schon wieder morgens mit dem Kinderwagen vor dem Fahrstuhl - außer Be
 Hier kommt Elevate! ins Spiel. Gib einfach an, welche Haltestellen sind die du regelmäßig nutzt, und wann du benachrichtigt werden willst. Und wenn der Fahstuhl oder die Rolltreppe außer Betrieb ist bekommst du eine Nachricht - und stehst nie wieder vor verschlossenen Fahrstuhltüren. 
 
 ## 2. Systemkomponenten
-Hardware  (keine?)
+#Hardware
+- Cloud-Server
+- mobile Endgeräte
+
+# Software
+- App für den Fahrstul-Check
 
 ### Software 
+```diff
+- das sind framework, services und keine Software.
+```
 Python / streamlit
 User Authentification, Datenbank für User Data
 Email-Server
@@ -17,34 +25,37 @@ Email-Server
 Beruht auf Daten der [FaSta API](https://developers.deutschebahn.com/db-api-marketplace/apis/product/fasta) der Deutschen Bahn.
 
 Ausgangsschnittstellen
-…
+- RESTful webservice
+
 
 ## 3. Netzwerkkonzept
-Bandbreite (Carrier, QoS)  
-Anteile intern/extern  
-Was wird benötigt?  
-IP-Adressen/ Ports /Firewallfreischaltung/QoS  
-Platz im Technikraum  
-Anzahl HE  
-Tiefe  
-…
+- Bandbreite (Carrier, QoS) -  5 mbit
+- QoS nicht notwendig, nur sehr wenig Daten notwendig (Text-File)
 
 ## 4. Cloud-Bedarf
-Autarke Anteile  
-Darstellung Aufbau  
-...
+- 2 virtuelle Server (Mirror)
+- 2 virtuelle Datenbanken (Mirror)
+
 
 ## 5. Betriebskonzept
-Hardware – Wartungsbedarf?  
-Betriebssystem  
-Updateverfahren (Securitypatches,..)  
-Softwarepflege  
-Securitypatches,..
+Hardware – Wartungsbedarf:
+- gering, keine eigenen Server, nur mobile Endgeräte und PCs
+
+Betriebssystem: 
+- Cloud: Red Hat Enterprise Linux
+- Mobilgeräte: Android, IOS
+- PCs: Windows10, MacOS
+
+Updateverfahren:
+- Update der Cloud über den Anbieter
+Softwarepflege
+- User überlassen
 
 
 ## 6. Notfallkonzeption
-Datensicherung  / Logs  
-...
+- Datenbanken und Server gespiegelt vorhanden, Umschaltung bei Ausfall
+- Daily BackUps, nightly tests
+
 
 ## 7. Support
 Entry Point für Incidents  
