@@ -71,7 +71,7 @@ Wartungszugang erforderlich?
 ...
 
 ## 8. Bedienoberflächen
-- WebSite für Web version
+- WebSite für Web version (responsive)
 - App für mobile app version
 
 
