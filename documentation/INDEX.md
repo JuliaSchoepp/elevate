@@ -57,6 +57,11 @@ Softwarepflege
 - Daily BackUps, nightly tests
 
 
+#### Datensicherung  / Logs 
+- Erstellung eines Backups alle 24h
+- Erstellung von Logs und Sicherung für 90 Tage
+- Dashboards in new relic
+
 ## 7. Support
 Entry Point für Incidents  
 Supportzeit  
@@ -66,6 +71,13 @@ Wartungszugang erforderlich?
 ...
 
 ## 8. Bedienoberflächen
-Systemvoraussetzungen  
-Nutzer- und Berechtigungskonzept  
-...
+- WebSite für Web version
+- App für mobile app version
+
+
+Systemvoraussetzungen:
+- modernes Smartphone
+- moderner Browser
+
+Nutzer- und Berechtigungskonzept:
+
