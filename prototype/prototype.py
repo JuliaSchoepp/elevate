@@ -34,3 +34,23 @@ data = fetch(session, 'https://apis.deutschebahn.com/db-api-marketplace/apis/fas
 df = tweak_df(data)
 
 st.map(df)
+
+# fancier version not working yet
+# st.pydeck_chart(pdk.Deck(
+#     map_style=None,
+#     initial_view_state=pdk.ViewState(
+#         latitude=52.5,
+#         longitude=13.4,
+#         zoom=10,
+#         pitch=50,
+#     ),
+#     layers=[
+#         pdk.Layer(
+#             'ScatterplotLayer',
+#             data=df,
+#             get_position='[lon, lat]',
+#             get_color='[200, 30, 0, 160]',
+#             get_radius=200,
+#         )
+#     ],
+# ))
