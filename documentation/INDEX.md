@@ -18,7 +18,7 @@ Hier kommt Elevate! ins Spiel. Gib einfach an, welche Haltestellen du regelmäß
 - Mobile Endgeräte
 
 ### Software
-- App für den Fahrstul-Check
+- App für den Fahrstuhl-Check
 
 ### Services und Packages
 - Python / streamlit
@@ -46,7 +46,7 @@ Hardware – Wartungsbedarf:
 Betriebssystem: 
 - Cloud: Red Hat Enterprise Linux
 - Mobilgeräte: Android, IOS
-- PCs: Windows10, MacOS
+- PCs: Windows, MacOS
 
 Updateverfahren:
 - Update der Cloud über den Anbieter
