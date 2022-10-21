@@ -1,3 +1,9 @@
+#How To?
+1. install Node >= 14.0.0 and npm >= 5.6 
+2. go in console to elevatel folder
+3. run npm i
+4. npm start
+5. localhost will be opened automatically in Browser
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
