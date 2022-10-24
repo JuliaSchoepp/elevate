@@ -1,5 +1,5 @@
 # secrets
-config.ini
+config.json
 
 # playing around
 *.ipynb
