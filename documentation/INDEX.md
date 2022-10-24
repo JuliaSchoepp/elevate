@@ -12,6 +12,12 @@ Hier kommt Elevate! ins Spiel. Gib einfach an, welche Haltestellen du regelmäß
 - Einsehen von Statistiken über Status meiner relevanten Facilities und darüber hinaus
 
 
+### Zielgruppen:
+Regelmäßige Kund:innen der S-Bahnen, insbesondere:
+- Menschen mit Kindern (v.a.: Kinderwägen etc.)
+- Menschen mit Mobilitätseinschränkungen
+- Menschen mit Gepäck, Fahrrädern etc.
+
 ## 2. Systemkomponenten
 ### Hardware
 - Cloud-Server
@@ -72,9 +78,19 @@ Wartungszugang erforderlich?
 ```
 
 ## 8. Bedienoberflächen
+Systemvoraussetzungen  
+- modernes Smartphone
+- moderner Browser
+- 
+Nutzer- und Berechtigungskonzept  
 - WebSite für Web Version (responsive)
 - App für Mobile App Version
 
-Systemvoraussetzungen:
-- modernes Smartphone
-- moderner Browser
+### User Stories
+- Auswählen einer Station (Facility?) über Karte
+- Auswahl einer Facility über Stationssuche
+- Anlegen eines Alarms für bestimmte Facilities
+- Konfigurieren eines Alarms (Uhrzeit)
+- Ändern / Löschen eines Alarms
+- Einsehen von Statistiken
+
