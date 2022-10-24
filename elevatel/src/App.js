@@ -1,19 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import { DataProvider } from './DataProvider';
-import HelloWorld from './HelloWorld.js';
+import React from 'react';
+import Content from './Content';
+
+export const UserContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
+      <header >
+            <h1>Elevate!</h1>
       </header>
       <div>
-      <DataProvider>
-        <HelloWorld/>
-      </DataProvider>
+        <UserContext.Provider value="Hello World">
+          <Content />
+      </UserContext.Provider>
       </div>
     </div>
   );
