@@ -18,3 +18,8 @@ code {
 }
 
 #map { height: 180px; }
+
+.leaflet-container {
+  width: 100wh; 
+  height: 100vh;
+}

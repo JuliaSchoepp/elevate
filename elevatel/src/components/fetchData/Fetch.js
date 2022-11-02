@@ -58,16 +58,18 @@ class FetchAPIData extends React.Component {
             //     </option>
             // ))}
             // </select>
-
-            <select className="station-list">
-            <option /> 
-            {items.map((facility) => {
-                return <option key={facility.equipmentnumber} value={facility.equipmentnumber}>
-                    StatusID: {facility.stationnumber} 
-                    {' '} Station Status: {facility.state} 
-                    </option>
-            })} 
-            </select>
+            <div>
+                <span>Stationsuche: </span>
+                <select className="station-list">
+                <option /> 
+                {items.map((facility) => {
+                    return <option key={facility.equipmentnumber} value={facility.equipmentnumber}>
+                        StatusID: {facility.stationnumber} 
+                        {' '} Station Status: {facility.state} 
+                        </option>
+                })} 
+                </select>
+            </div>
         );
         }
     }
