@@ -58,7 +58,7 @@ class FetchAPIData extends React.Component {
             //     </option>
             // ))}
             // </select>
-            <div>
+            <div className="search-drop">
                 <span>Stationsuche: </span>
                 <select className="station-list">
                 <option /> 
