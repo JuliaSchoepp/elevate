@@ -1,25 +1,20 @@
-import './App.css';
-import React from 'react';
-import Content from './Content';
-import { FetchAPIData } from './Fetch';
+import React from "react";
+import { Header } from "./components/header/Header";
+import { Footer } from "./components/footer/Footer";
+import { Navigation } from "./components/nav/Navigation";
+import './styling/index.css'
+
 
 export const UserContext = React.createContext();
 
 function App() {
-  
   return (
     <div className="App">
-      <header >
-            <h1>Elevate!</h1>
-      </header>
-      <div>
-      <UserContext.Provider value="Hello World">
-          <Content />
-      </UserContext.Provider>
+      <Header />
+      <div className="main">
+        <Navigation />
       </div>
-      <div>
-        <FetchAPIData />
-      </div>
+      <Footer />
     </div>
   );
 }

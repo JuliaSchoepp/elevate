@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+#map { height: 180px; }
+
+.leaflet-container {
+  width: 100wh; 
+  height: 100vh;
 }

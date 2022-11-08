@@ -1,0 +1,24 @@
+.navigation {
+    width: 100%;
+}
+
+.navigation ul li {
+	list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 25px 0;
+}
+
+.navigation .navigation-list {
+	display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    padding: 0 20px;
+}
+
+.navigation ul li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

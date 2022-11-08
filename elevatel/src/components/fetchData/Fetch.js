@@ -1,13 +1,14 @@
 import React from "react";
-import configdata from "./config.json";
+import configdata from "../../env.json";
+import './index.css';
 
 class FetchAPIData extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-        error: null,
-        isLoaded: false,
-        items: []
+            error: null,
+            isLoaded: false,
+            items: []
         };
     }
     
@@ -33,6 +34,10 @@ class FetchAPIData extends React.Component {
             });
             }
         )
+        .catch(function (error) {
+            //Handle error
+            console.log(error);
+          });
     }
     
     render() {
@@ -43,13 +48,28 @@ class FetchAPIData extends React.Component {
         return <div>Loading...</div>;
         } else {
         return (
-            <ul>
-            {items.map(facility => (
-                <li key={facility.equipmentnumber}>
-                {facility.stationnumber} {facility.state}
-                </li>
-            ))}
-            </ul>
+            // <code>{JSON.stringify(items)}</code>
+            // <select className="station-list">
+            // {items.map(facility => (
+            //     <option key={facility.equipmentnumber} value={facility.equipmentnumber}>
+            //     <span>Station ID:{facility.stationnumber} </span> 
+            //     <span>Station Status:{facility.state}</span>
+                 
+            //     </option>
+            // ))}
+            // </select>
+            <div className="search-drop">
+                <span>Stationsuche: </span>
+                <select className="station-list">
+                <option /> 
+                {items.map((facility) => {
+                    return <option key={facility.equipmentnumber} value={facility.equipmentnumber}>
+                        StatusID: {facility.stationnumber} 
+                        {' '} Station Status: {facility.state} 
+                        </option>
+                })} 
+                </select>
+            </div>
         );
         }
     }
