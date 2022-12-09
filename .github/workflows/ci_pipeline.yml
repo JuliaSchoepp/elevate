@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 14.0
+        working-directory: ./app
         uses: actions/setup-node@v3
         with:
           node-version: 14.0
