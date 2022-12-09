@@ -13,8 +13,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14.0
-      - working-directory: ./elevatel
-      - run: npm install
+      - run: npm ci -C elevatel
       - run: npm build
       - run: npm test
 
