@@ -20,9 +20,10 @@ jobs:
   Discover-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - npm install
-      - npm test
-      - npm build
+    - run: |
+      npm install
+      npm test
+      npm build
 
 
 # installieren /setup / presetup
