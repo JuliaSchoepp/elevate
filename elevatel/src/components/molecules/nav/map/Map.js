@@ -1,7 +1,7 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import './index.css';
 
-function Map() {
+export default function Map() {
   const position = [52.520008, 13.404954];
   return (
     <MapContainer
@@ -21,5 +21,4 @@ function Map() {
     </MapContainer>
   );
 }
-  
-export {Map};
+

@@ -1,0 +1,9 @@
+.map-page {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-page .text {
+	margin-top: 300px;
+}

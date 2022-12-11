@@ -1,0 +1,18 @@
+.logo_box {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elevatel_logo {
+	position: absolute;
+    height: 75px;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+.berlin_logo {
+	height: 250px;
+}
+
