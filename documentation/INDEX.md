@@ -27,7 +27,7 @@ Regelmäßige Kund:innen der S-Bahnen, insbesondere:
 - App für den Fahrstuhl-Check
 
 ### Services und Packages
-- Python / streamlit
+- React Framework + Node Environment
 - User Authentification 
 - Datenbank für User Data
 - Email-Server
