@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
+import MainLogo from '../../../atoms/logoModule/MainLogo';
 
 class AlarmResults extends Component {
   handleSubmit = (event) => {
@@ -10,6 +11,7 @@ class AlarmResults extends Component {
   render() {
     return (
       <div className="alarm-result-page">
+		<MainLogo/>
         <div className="text">
           <form onSubmit={this.handleSubmit}>
             <label>

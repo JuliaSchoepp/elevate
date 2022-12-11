@@ -8,7 +8,6 @@ import "./index.css";
 import karteIcon from "../../../img/karte.png";
 import sucheImg from "../../../img/suche.png";
 import alarmImg from "../../../img/alarm.png";
-import MainLogo from "../../atoms/logoModule/MainLogo";
 import homeImg from '../../../img/home.png'
 
 class Navigation extends React.Component {

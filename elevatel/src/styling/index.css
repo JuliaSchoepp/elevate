@@ -17,25 +17,26 @@ code {
 }
 
 body {
-  background: rgb(183,219,200);
-  background: linear-gradient(90deg, rgba(183,219,200,1) 0%, rgba(121,184,186,1) 26%, rgba(9,102,121,0.5298713235294117) 63%, rgba(9,102,121,0.7987788865546218) 100%);
+  background: #E4E9EF;
+  /* background: rgb(183,219,200);
+  background: linear-gradient(90deg, rgba(183,219,200,1) 0%, rgba(121,184,186,1) 26%, rgba(9,102,121,0.5298713235294117) 63%, rgba(9,102,121,0.7987788865546218) 100%); */
 }
 
 #map { height: 180px; }
 
 .leaflet-container {
-  width: 100vh; 
+  width: 80vh; 
   height: 100vh;
 }
 
 .main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .App {
   display: flex;
-  min-height: 1080px;
 }
 
 /* .side-menu {

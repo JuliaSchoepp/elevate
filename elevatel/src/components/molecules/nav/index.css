@@ -6,10 +6,6 @@
     margin-top: 300px;
 }
 
-.navigation .react-tabs {
-    display: flex;
-    flex-direction: row;
-}
 
 .navigation .link {
 	list-style: none;
@@ -17,10 +13,15 @@
     flex-direction: column;
     align-items: center;
 	margin: 25px 0;
+    text-decoration: none;
+    font-size: 36px;
+    color: #333333;
 }
 
-.navigation .link:active {
-    color: red;
+.navigation .link.active {
+    font-weight: bold;
+    color: #333333;
+    text-shadow: 2px 2px 4px #03539F;
 }
 /* .navigation .navigation-list {
 	display: flex;

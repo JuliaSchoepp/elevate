@@ -11,8 +11,8 @@ export default function Navigation() {
     <div className="home-page">
 		<MainLogo />
 		<div className="text">
-			<h1>Du willst mit der Bahn fahren, aber der Fahrstuhl geht mal wieder nicht?</h1>
-			<h1>Spar dir den Weg und schau mit ELEVATE! ob die Fahrstühle auf deiner Verbindung funktionieren.</h1>
+			<h3>Du willst mit der Bahn fahren, aber der Fahrstuhl geht mal wieder nicht?</h3>
+			<h3>Spar dir den Weg und schau mit ELEVATE! ob die Fahrstühle auf deiner Verbindung funktionieren.</h3>
 		</div>
 		<Map x={52.520008} y={13.404954} station={'Berlin Alexanderplatz'}/>
     </div>

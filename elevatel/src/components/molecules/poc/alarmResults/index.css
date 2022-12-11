@@ -1,6 +1,3 @@
-.alarm-result-page {
-	margin-top: 300px;
-}
 .label_line {
 	display: flex;
     flex-direction: row;
@@ -43,4 +40,24 @@
 .name {
 	display: flex;
 	flex-direction: column;
+}
+
+button {
+	background-color: #69A8DA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+}
+
+input {
+	padding: 15px;
+	margin: 0 15px;
+}
+
+label {
+	font-size: 20px;
 }
