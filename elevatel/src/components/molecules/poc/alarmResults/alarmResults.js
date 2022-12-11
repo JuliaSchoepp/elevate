@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import MainLogo from '../../../atoms/logoModule/MainLogo';
+import MainLogo from "../../../atoms/logoModule/MainLogo";
 
 class AlarmResults extends Component {
   handleSubmit = (event) => {
@@ -11,7 +11,7 @@ class AlarmResults extends Component {
   render() {
     return (
       <div className="alarm-result-page">
-		<MainLogo/>
+        <MainLogo />
         <div className="text">
           <form onSubmit={this.handleSubmit}>
             <label>
@@ -24,7 +24,7 @@ class AlarmResults extends Component {
         <div className="results">
           <h3>Meine Alarme</h3>
           <div className="label_line">
-            <span style={{marginRight: '130px'}}>Name</span>
+            <span style={{ marginRight: "130px" }}>Name</span>
             <span>Zeitraum</span>
             <span>Status</span>
             <span>Email</span>
@@ -33,13 +33,17 @@ class AlarmResults extends Component {
 
           <div className="line_result_one">
             <span className="name">
-              Bahnhof Friedrichsstraße <span></span>
+              <span>Bahnhof Friedrichsstraße</span>
               <span>Gleis 1/2</span>
             </span>
-            <span>Zeitraum</span>
+            <span className="status">
+              <span>Mo - Fr</span>
+              <span>06:00 - 06:30</span>
+			  <span>16:00 - 16:30</span>
+            </span>
             <span className="active"></span>
             <span>test@test.de</span>
-            <span className="remove"></span>
+            <span className="remove" title="active"></span>
           </div>
 
           <div className="line_result_two">
@@ -47,10 +51,14 @@ class AlarmResults extends Component {
               Bahnhof Friedrichsstraße <span></span>
               <span>Gleis 1/2</span>
             </span>
-            <span>Zeitraum</span>
-            <span className="no_info"></span>
+			<span className="status">
+              <span>Mo - Fr</span>
+              <span>06:00 - 06:30</span>
+			  <span>16:00 - 16:30</span>
+            </span>
+            <span className="no_info" title="unknown"></span>
             <span>test@test.de</span>
-            <span className="remove">x</span>
+            <span className="remove"></span>
           </div>
 
           <div className="line_result_three">
@@ -58,10 +66,14 @@ class AlarmResults extends Component {
               Bahnhof Friedrichsstraße <span></span>
               <span>Gleis 1/2</span>
             </span>
-            <span>Zeitraum</span>
-            <span className="not_active"></span>
+			<span className="status">
+              <span>Mo - Fr</span>
+              <span>06:00 - 06:30</span>
+			  <span>16:00 - 16:30</span>
+            </span>
+            <span className="not_active" title="disabled"></span>
             <span>test@test.de</span>
-            <span className="remove">x</span>
+            <span className="remove"></span>
           </div>
         </div>
       </div>

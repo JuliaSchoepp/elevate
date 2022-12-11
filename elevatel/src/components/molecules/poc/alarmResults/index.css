@@ -1,8 +1,14 @@
+.alarm-result-page {
+	width: 100%;
+}
+
 .label_line {
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
 	border: 1px solid;
+	padding: 10px 20px;
+	background-color: #69A8DA;
 }
 
 .line_result_one, 
@@ -11,6 +17,10 @@
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
+	padding: 10px 20px;
+	margin: 20px 0;
+	background-color: #CBE3F3;
+	align-items: center;
 }
 
 .results .active {
@@ -60,4 +70,17 @@ input {
 
 label {
 	font-size: 20px;
+}
+
+.remove {
+	background-image: url("../../../../img/remove.png");
+    background-repeat: no-repeat;
+    width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.status {
+	display: flex;
+	flex-direction: column;
 }
