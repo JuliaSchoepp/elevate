@@ -3,7 +3,7 @@ import React from "react";
 import "./index.css";
 
 
-import Map from '../nav/map/Map'
+import {Map} from '../nav/map/Map'
 import MainLogo from '../../atoms/logoModule/MainLogo';
 
 export default function Navigation() {
@@ -14,7 +14,7 @@ export default function Navigation() {
 			<h1>Du willst mit der Bahn fahren, aber der Fahrstuhl geht mal wieder nicht?</h1>
 			<h1>Spar dir den Weg und schau mit ELEVATE! ob die Fahrstühle auf deiner Verbindung funktionieren.</h1>
 		</div>
-		<Map/>
+		<Map x={52.520008} y={13.404954} station={'Berlin Alexanderplatz'}/>
     </div>
   );
 }

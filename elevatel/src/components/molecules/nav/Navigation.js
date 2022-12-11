@@ -11,7 +11,7 @@ import alarmImg from "../../../img/alarm.png";
 import MainLogo from "../../atoms/logoModule/MainLogo";
 import homeImg from '../../../img/home.png'
 
-class Navigation extends Component {
+class Navigation extends React.Component {
   constructor(props) {
     super(props);
   }
