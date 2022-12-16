@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -9,21 +9,39 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid grey;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.main {
-  display: flex;
-  flex-direction: row;
+body {
+  background: #E4E9EF;
+  /* background: rgb(183,219,200);
+  background: linear-gradient(90deg, rgba(183,219,200,1) 0%, rgba(121,184,186,1) 26%, rgba(9,102,121,0.5298713235294117) 63%, rgba(9,102,121,0.7987788865546218) 100%); */
 }
 
 #map { height: 180px; }
 
 .leaflet-container {
-  width: 100wh; 
+  width: 80vh; 
   height: 100vh;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+}
+
+/* .side-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 300px;
+} */

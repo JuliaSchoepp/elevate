@@ -1,5 +1,5 @@
 import React from "react";
-import configdata from "../../env.json";
+import configdata from "../../../env.json";
 import './index.css';
 
 class FetchAPIData extends React.Component {
