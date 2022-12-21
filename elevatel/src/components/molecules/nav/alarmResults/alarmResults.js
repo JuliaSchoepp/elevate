@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import MainLogo from "../../../atoms/logoModule/MainLogo";
 
-class AlarmResults extends Component {
+export default class AlarmResults extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);

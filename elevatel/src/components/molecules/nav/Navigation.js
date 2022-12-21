@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./index.css";
 
@@ -8,13 +6,9 @@ import "./index.css";
 import karteIcon from "../../../img/karte.png";
 import sucheImg from "../../../img/suche.png";
 import alarmImg from "../../../img/alarm.png";
-import homeImg from '../../../img/home.png'
+import homeImg from "../../../img/home.png";
 
 class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="navigation">
@@ -22,7 +16,7 @@ class Navigation extends React.Component {
           <img src={homeImg} alt="home" />
           <span>Home</span>
         </NavLink>
-          <NavLink to="/karte" className="link">
+        <NavLink to="/karte" className="link">
           <img src={karteIcon} alt="karte" />
           <span>Karte</span>
         </NavLink>
@@ -39,5 +33,4 @@ class Navigation extends React.Component {
   }
 }
 
-
-export {Navigation};
+export { Navigation };
