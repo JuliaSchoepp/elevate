@@ -18,10 +18,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14.0
-      - run: npm ci
-      - run: npm build
-      - run: npm test
       - name: Cypress run
         uses: cypress-io/github-action@v1
+        with:
+          install: npm ci
+          build: npm run build
+          start: npm start
+      - run: npm test
 
 
