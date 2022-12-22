@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./index.css";
 import MainLogo from "../../atoms/logoModule/MainLogo";
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./index.css";
 import MainLogo from "../../atoms/logoModule/MainLogo";
 
@@ -15,7 +15,7 @@ class NotificationPage extends React.Component {
 
   render() {
     return (
-      <div className="notification-page">
+      <div className="notification-page" data-cy="notification-page">
         <MainLogo />
         <div className="text">
           <h3>
@@ -25,12 +25,12 @@ class NotificationPage extends React.Component {
           </h3>
           <h3>Dafür benötigen wir Deine E-Mail-Adresse.</h3>
 
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} data-testid="alarm-form">
             <label>
               E-Mail:
-              <input type="text" name="email" />
+              <input type="text" name="email" data-cy="alarm-input"/>
             </label>
-            <button type="submit">Los</button>
+            <button type="submit" data-cy="alarm-submit">Los</button>
           </form>
         </div>
       </div>

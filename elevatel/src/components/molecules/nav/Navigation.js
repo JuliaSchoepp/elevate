@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./index.css";
 
@@ -8,29 +6,25 @@ import "./index.css";
 import karteIcon from "../../../img/karte.png";
 import sucheImg from "../../../img/suche.png";
 import alarmImg from "../../../img/alarm.png";
-import homeImg from '../../../img/home.png'
+import homeImg from "../../../img/home.png";
 
 class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="navigation">
-        <NavLink to="/" className="link">
+        <NavLink to="/" data-cy="home-link" className="link">
           <img src={homeImg} alt="home" />
           <span>Home</span>
         </NavLink>
-          <NavLink to="/karte" className="link">
+        <NavLink to="/karte" data-cy="map-link" className="link">
           <img src={karteIcon} alt="karte" />
           <span>Karte</span>
         </NavLink>
-        <NavLink to="/suche" className="link">
-          <img src={sucheImg} alt="karte" />
+        <NavLink to="/suche" data-cy="search-link" className="link">
+          <img src={sucheImg} alt="suche" />
           Suche
         </NavLink>
-        <NavLink to="/alarm" className="link">
+        <NavLink to="/alarm" data-cy="alarm-link" className="link">
           <img src={alarmImg} alt="karte" />
           Alarm
         </NavLink>
@@ -39,5 +33,4 @@ class Navigation extends React.Component {
   }
 }
 
-
-export {Navigation};
+export { Navigation };

@@ -19,12 +19,12 @@ class SearchPage extends Component {
             Mit der Karte kannst du nach nach einer Station suchen. Klicke auf
             einen Bahnhof.
           </h3>
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} data-cy="search-station-form">
             <label>
               Stationsuche:
-              <input type="text" name="station" />
+              <input type="text" name="station" data-cy="input-station"/>
             </label>
-            <button type="submit">Los</button>
+            <button type="submit" data-cy="input-search-submit">Los</button>
           </form>
         </div>
       </div>

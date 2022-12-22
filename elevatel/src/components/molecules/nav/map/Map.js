@@ -1,13 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "./index.css";
 
 class Map extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
-    const position = [this.props.x, this.props.y];
+    // const position = [this.props.x, this.props.y];
     return (
       <MapContainer
         center={[this.props.x, this.props.y]}
@@ -29,4 +26,4 @@ class Map extends React.Component {
   }
 }
 
-export {Map};
+export { Map };

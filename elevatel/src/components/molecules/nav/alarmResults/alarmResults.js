@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import MainLogo from "../../../atoms/logoModule/MainLogo";
 
-class AlarmResults extends Component {
+export default class AlarmResults extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,7 +22,7 @@ class AlarmResults extends Component {
 
   render() {
     return (
-      <div className="alarm-result-page">
+      <div className="alarm-result-page" data-cy="alarm-result-page">
         <MainLogo />
         <div className="text">
           <form onSubmit={this.handleSubmit}>
@@ -33,7 +33,7 @@ class AlarmResults extends Component {
             <button type="submit">Los</button>
           </form>
         </div>
-        <div className="results">
+        <div className="results" data-cy="results">
           <h3>Meine Alarme</h3>
           <div className="label_line">
             <span style={{ marginRight: "130px" }}>Name</span>
@@ -73,7 +73,7 @@ class AlarmResults extends Component {
             <span className="remove" onClick={this.removeDiv}></span>
           </div>
 
-          <div className="line_result_three">
+          <div className="line_result_three" data-cy="line_result_three">
             <span className="name">
               Bahnhof Friedrichsstraße <span></span>
               <span>Gleis 1/2</span>
@@ -85,7 +85,7 @@ class AlarmResults extends Component {
             </span>
             <span className="not_active" title="disabled"></span>
             <span>test@test.de</span>
-            <span className="remove" onClick={this.removeDiv}></span>
+            <span className="remove" data-cy="remove_line_result_three" onClick={this.removeDiv}></span>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import HomePage from "./components/molecules/homepage/Homepage";
 import { SearchPage } from "./components/molecules/searchPage/searchPage";
 import MapPage from "./components/molecules/mapPage/mapPage";
 import { NotificationPage } from "./components/molecules/notificationPage/notificationPage";
-import { AlarmResults } from "./components/molecules/poc/alarmResults/alarmResults";
+import { AlarmResults } from "./components/molecules/nav/alarmResults/alarmResults";
 import { ErrorPage } from "./components/molecules/errorTemplate404/error";
 
 export const UserContext = React.createContext();
