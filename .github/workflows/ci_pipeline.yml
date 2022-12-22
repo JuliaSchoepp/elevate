@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 14.0
       - name: Cypress run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v5
         with:
           install: npm ci
           build: npm run build
